@@ -1,0 +1,593 @@
+/* #region HTML5 Reset*/
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* #endregion HTML5 Reset */
+
+
+/* #region clearfix */
+
+
+/**
+ *
+ * clearfix
+ *
+ */
+
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* #endregion clearfix */
+
+
+/* #region Default design - Mobile First - Apple iPhone SE (320px x 568px) */
+
+
+/* #region layout */
+
+
+/**
+ *
+ * Layout
+ *
+ */
+
+.church-image {
+    display: none;
+    float: right;
+    margin-top: -20px;
+    width: 30%;
+}
+
+.church-image img {
+    max-width: 100%;
+}
+
+.curent-worship-time {
+    margin-top: .5rem;
+}
+
+.event-name {
+    margin-bottom: .5rem;
+}
+
+.google-map {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gallery {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.gallery-image {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gallery-image img {
+    max-width: 95%;
+}
+
+header h1 {
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    text-align: center;
+    width: 80%;
+}
+
+h2 {
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+h3,
+h4,
+h5 {
+    margin-bottom: .5rem;
+    margin-top: .5rem;
+}
+
+.nav-box nav ul li {
+    float: left;
+    margin-left: 1rem;
+}
+
+p {
+    margin-top: .5rem;
+}
+
+.page {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.restore-bullets {
+    list-style: square;
+    padding-left: 20px;
+}
+
+section {
+    margin-top: 1rem;
+}
+
+.worship-times li {
+    margin-bottom: .5rem;
+}
+
+
+/* #endregion layout */
+
+
+/* #region style */
+
+
+/**
+ *
+ * Style
+ *
+ */
+
+.no-underline {
+    text-decoration-line: none;
+}
+
+.page {
+    background-color: #f2f8ee;
+}
+
+.page-header {
+    background-image: url("../images/BCC.jpg");
+    background-size: 200%;
+}
+
+.nav-box {
+    background-color: rgba(242, 248, 238, .75);
+}
+
+
+/* #endregion style  */
+
+
+/* #region typography */
+
+
+/**
+ *
+ * Typography
+ *
+ */
+
+.curent-worship-time {
+    font-size: 1.15rem;
+    font-weight: 500;
+}
+
+body {
+    font-family: 'Maven Pro', sans-serif;
+}
+
+em {
+    font-style: italic;
+}
+
+
+/* Taken from https://stackoverflow.com/a/6140504/9543025 */
+
+h1 {
+    color: #145a4f;
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.17em;
+}
+
+h4 {
+    font-size: 1.12em;
+}
+
+h5 {
+    font-size: .83em;
+}
+
+h6 {
+    font-size: .75em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: bold;
+}
+
+.nav-box nav li a {
+    font-size: 1.25rem;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.worship-times-note {
+    font-size: .85rem;
+    font-style: italic;
+    font-weight: 300;
+}
+
+
+/* #endregion typography */
+
+
+/* #endregion Default design - Mobile First - Apple iPhone SE (320px x 568px) */
+
+
+/* #region - Mobile first design breakpoint 400px */
+
+@media screen and (min-width: 400px) {
+    /**
+ *
+ * Layout
+ *
+ */
+    .gallery-image img {
+        max-width: 75%;
+    }
+}
+
+
+/* #endregion - Mobile first design breakpoint 400px */
+
+
+/* #region - Mobile first design breakpoint 500px */
+
+@media screen and (min-width: 500px) {
+    /**
+ *
+ * Layout
+ *
+ */
+    .gallery-image {
+        display: inline;
+    }
+    .gallery-image img {
+        max-width: 45%;
+    }
+}
+
+
+/* #endregion - Mobile first design breakpoint 500px */
+
+
+/* #region - Mobile first design breakpoint 800px wide */
+
+@media screen and (min-width: 800px) {
+    /**
+ *
+ * Layout
+ *
+ */
+    .page {
+        width: 90%;
+    }
+}
+
+
+/* #endregion - Mobile first design breakpoint 800px wide */
+
+
+/* #region - Apple iPad (1024px x 768px) */
+
+@media screen and (min-width: 960px) {
+    /**
+    *
+    * Layout
+    *
+    */
+    .church-image {
+        display: unset;
+    }
+    .google-map {
+        height: 400px;
+        width: 60%;
+    }
+    .gallery {
+        padding-top: 2em;
+        padding-bottom: 2em;
+        width: 70%
+    }
+    .gallery-image {
+        display: inline;
+    }
+    .gallery-image img {
+        max-width: 45%;
+    }
+    header h1 {
+        margin-left: 0;
+        padding-bottom: 1rem;
+        padding-left: .25rem;
+        padding-top: 1rem;
+        text-align: left;
+        width: 70%;
+    }
+    .main-content {
+        float: left;
+        width: 70%;
+    }
+    .nav-box nav ul li {
+        display: inline;
+        float: none;
+    }
+    .page {
+        margin-top: 40px;
+        /* 960px/1024px */
+        width: 93.75%;
+    }
+    .side-content {
+        float: right;
+        width: 29%;
+        padding-left: 1%;
+    }
+    .worship-times li {
+        background-color: rgba(183, 189, 188);
+    }
+    /**
+    *
+    * Style
+    *
+    */
+    .page {
+        background-image: url("../images/right_faux_colum.png");
+        background-repeat: repeat-y;
+        background-size: 100%;
+    }
+    .page-header {
+        background: none;
+        background-color: white;
+    }
+    .nav-box {
+        background-color: rgba(242, 248, 238, 1);
+    }
+    /**
+    *
+    * Typography
+    *
+    */
+}
+
+
+/* #endregion - Apple iPad (1024px x 768px) */
+
+
+/* #region - Widescreens monitors larger than 1280px */
+
+@media screen and (min-width: 1280px) {
+    /**
+    *
+    * Layout
+    *
+    */
+    .church-image {
+        display: unset;
+    }
+    .google-map {
+        height: 400px;
+        width: 60%;
+    }
+    .gallery {
+        margin-top: 1em;
+        margin-bottom: 1em;
+        width: 70%
+    }
+    .gallery-image {
+        display: inline;
+    }
+    .gallery-image img {
+        max-width: 32%;
+    }
+    header h1 {
+        margin-left: 0;
+        padding-bottom: 1rem;
+        padding-left: .25rem;
+        padding-top: 1rem;
+        text-align: left;
+        width: 70%;
+    }
+    .main-content {
+        float: left;
+        width: 70%;
+    }
+    .nav-box nav ul li {
+        display: inline;
+        float: none;
+    }
+    .page {
+        margin-top: 40px;
+        width: 85%;
+    }
+    .side-content {
+        float: right;
+        padding-left: 1%;
+        width: 29%;
+    }
+    .worship-times li {
+        background-color: rgba(183, 189, 188);
+    }
+    /**
+    *
+    * Style
+    *
+    */
+    .page {
+        background-image: url("../images/right_faux_colum.png");
+        background-repeat: repeat-y;
+        background-size: 100%;
+    }
+    .page-header {
+        background: none;
+        background-color: white;
+    }
+    .nav-box {
+        background-color: rgba(242, 248, 238, 1);
+    }
+    /**
+    *
+    * Typography
+    *
+    */
+}
+
+
+/* #endregion - Widescreens monitors larger than 1280px */
